@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../../css/xqsan.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<script src="../../js/jquery.min.js"></script>
+		<title></title>
+	</head>
+	<script>
+		(function(win, doc) {
+			//浏览器缩放时
+			win.onresize = function() {
+				change();
+			};
+			change();
+
+			function change() {
+				var oFs = doc.documentElement.clientWidth / (640 / 20);
+
+				//设置根目录字体大小
+				doc.documentElement.style.fontSize = oFs + 'px';
+			}
+		})(window, document);
+	</script>
+	<body>
+		<div class="div" id="box">
+			<div class="div_box">
+				<p>余额转换成功</p>
+				<p id="p1">确定</p>
+			</div>
+		</div>
+		<header>
+			<span><a href="account_xq1.html"><</a></span>
+			<span>余额转换</span>
+		</header>
+		<div class="zhuan">
+			<a href="javascript:;"><img src="../../img/zhuan.png.png"/></a>
+			<p>您仅可以将短信量转换为闪注量</p>
+		</div>
+		<div class="box_p">
+			<p>当前短信账户余额为：100条</p>
+		</div>
+		<div class="box_p1">
+			<p>短信量<span>您最多可转换短信量100条</span></p>
+		</div>
+		<div class="box_p1">
+			<p>闪注量<span>0</span></p>
+		</div>
+		<div class="box">
+			<a href="javascript:;" id="a1">余额转换</a>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$("#a1").on("click",function(){
+				$("#box").show()
+			})
+			$("#p1").on("click",function(){
+				$("#box").hide()
+			})
+		})
+	</script>
+</html>

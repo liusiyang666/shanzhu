@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 0.32rem;
+	font-family: "微软雅黑";
+}
+header{
+	padding: 0.36rem 0;
+	display: flex;
+	justify-content: space-between;
+	
+}
+header div{
+	padding: 0px 0.2rem;
+}
+.content{
+	width: 100%;
+	
+}
+.content>div{
+	width: 85%;
+	border-bottom: 1px solid gainsboro;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.content input{
+	border: 0;
+	font-size: 0.18rem;
+	padding-left: 10px;
+	width: 85%;
+}
+.content span{
+	margin-top: 20px;
+}
+.content>div{
+	display: flex;
+}
+.content img{
+	height: 100%;
+	width: 100%;
+}
+.content>div>div:first-child{
+	width: 5%;
+}
+.btn{
+	width: 90%;
+	margin: 0 auto;
+
+}
+.btn input{
+	width: 100%;
+	border: 0;
+	border-radius: 20px;
+	padding: 10px 0;
+	background: #f8d475;
+	color: white;
+}
+.content>div:last-child{
+	border: 0;
+	margin-top: 30px;
+}
+.modal-content{
+	border-radius: 16px;
+}
+.modal-footer{
+	padding: 0;
+	border-radius: 0 0 10px 10px;
+}
+.btns{
+	display: flex;
+}
+.btns>div{
+	width: 50%;
+}
+.btns button{
+	width: 100%;
+	background: #ffd974;
+	color: white;
+	border: 0;
+	padding: 10px;
+}
+
+.btns .btn1s{
+	border-radius: 0 0 16px 0;
+}
+.btns .btn2s{
+	border-radius: 0 0 0 16px;
+}
+h3{
+	width: 85%;
+	margin: 0 auto;
+	font-size: 0.32rem;
+	padding: 10px 0;
+	margin-top: 30px;
+}
+.tj{
+	position: relative;
+}
+.modal-footer .btnyz{
+	border-radius: 0 0 16px 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: crimson;
+}
+.times{
+	border: 1px solid red;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 12px;
+	color: red;
+}

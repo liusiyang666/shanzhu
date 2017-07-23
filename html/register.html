@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/tongji.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<a href="homepage/myuser.html" class='head-a'><img src="../images/left_03.png"/></a>
+				<p class="head-center">
+					注册量统计
+					<span id="dj" ></span>
+				</p>
+				<p></p>
+			</div>
+			<!--今日注册量-->
+			<div class="nav">
+				<img src="../images/nav-01_03.png"/>
+			</div>
+			<!--点击隐藏出现。-->			
+			<div id="hide">
+				<div class="white">
+					<div class="hide-top">
+						<a href="#">全部</a>
+					</div>	
+					<div class="hide-row">
+						<p class="row-l"></p>
+						<p class="row-c">应用场景</p>
+						<p class="row-r"></p>
+					</div>
+					<div class="gray">
+						<a href="#">APP</a>
+						<a href="#">H5/web</a>
+					</div>
+					<div class="hide-row">
+						<p class="row-l"></p>
+						<p class="row-c">注册方式</p>
+						<p class="row-r"></p>
+					</div>
+					<div class="gray">
+						<a href="#">APP</a>
+						<a href="#">H5/web</a>
+					</div>
+				</div>
+				
+			</div>
+		</header>
+		<mian>
+			<div id="con">
+				<p class="active">今日注册量</p>
+				<p>一周注册量</p>
+				<p>一个月注册量</p>								
+			</div>
+			<div id="box">
+				<div  class="show">
+					<ul>
+						<li>
+							<p class="tel">15802012356</p>
+							<p class="success">
+								<span class="sp1">天天消消乐</span>
+								<span class="sp1">APP场景</span>
+								<span class="sp1">短信注册</span>
+							</p>
+							<p class="time">注册时间：2017/7/20 20：00</p>
+						</li>
+						<li>
+							<p class="tel">15205481254</p>
+							<p class="success">
+								<span class="sp1">天天消消乐</span>
+								<span class="sp2">H5/web场景</span>
+								<span class="sp3">闪注注册</span>
+							</p>
+							<p class="time">注册时间：2017/7/20 20：00</p>
+						</li>
+						<li>
+							<p class="tel">13054826256</p>
+							<p class="success">
+								<span class="sp1">天天消消乐</span>
+								<span class="sp1">APP场景</span>
+								<span class="sp3">闪注注册</span>
+							</p>
+							<p class="time">注册时间：2017/7/20 20：00</p>
+						</li><li>
+							<p class="tel">13054826256</p>
+							<p class="success">
+								<span class="sp1">天天消消乐</span>
+								<span class="sp1">APP场景</span>
+								<span class="sp3">闪注注册</span>
+							</p>
+							<p class="time">注册时间：2017/7/20 20：00</p>
+						</li>
+					</ul>
+				</div>
+				<div id="other1">这里是一周注册量</div>
+				<div id="other2">这里是一个月注册量</div>
+			</div>
+		</mian>
+	</body>
+<script src="../js/jquery-3.1.1.js"></script>	
+<script>
+window.onload=function(){
+	var oCon=document.getElementById('con');
+	var aInp=oCon.getElementsByTagName('p');
+	var oBox=document.getElementById('box');
+	var odiv = oBox.getElementsByTagName('div');
+	
+	for(var i=0;i<aInp.length;i++){
+		
+		aInp[i].index=i;
+		
+		aInp[i].onclick=function(){
+			
+			for(var i=0;i<aInp.length;i++){
+				aInp[i].className='';
+				odiv[i].className='';
+			}
+			
+			this.className='active';
+//			alert(this.index);
+			odiv[this.index].className='show';	
+		};	
+	}
+};
+//点击隐藏出现
+var ss = 1 ;
+$(function(){
+	$("#dj").on('click',function(){
+	if (ss ==1) {
+		$("#hide").css("height","100%");
+		ss = 2;
+	} else{
+		$("#hide").css("height","0");
+		ss = 1;
+	}
+	
+	})
+})
+</script>
+</html>

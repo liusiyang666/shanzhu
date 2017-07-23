@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../../css/xq1.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<title></title>
+	</head>
+	<script>
+		(function(win, doc) {
+			//浏览器缩放时
+			win.onresize = function() {
+				change();
+			};
+			change();
+
+			function change() {
+				var oFs = doc.documentElement.clientWidth / (640 / 20);
+
+				//设置根目录字体大小
+				doc.documentElement.style.fontSize = oFs + 'px';
+			}
+		})(window, document);
+	</script>
+
+	<body>
+		<header>
+			<span>
+			<a href="../../html/message/message2.html"><img src="../../img/tu_11.png"/></a>
+				
+			</span>
+			<span>天天消消乐</span>
+		</header>
+		<div class="box_huang">
+			<div class="box_1">
+				<a href="javascropt:;">
+					<img src="../../img/xiaohuang.png" />
+				</a>
+			</div>
+			<div class="box_2">
+				<h3>开心消消乐&nbsp;&nbsp;<span>【签名】:消消乐</span></h3>
+				<p>账户状态：正常</p>
+			</div>
+		</div>
+		<div class="box_ye">
+			<div class="box_ye1">
+				<p>短信量（条）</p>
+				<p>962</p>
+				<p>应用场景</p>
+				<p>APP、H5/web</p>
+				<div>
+					<a href="account_xq3.html">余额转换</a>
+				</div>
+			</div>
+			<div class="box_ye1">
+				<p>闪注量（条）</p>
+				<p>8502</p>
+				<p>到期时间</p>
+				<p>2017/7/1~2017/7/1</p>
+				<div class="div">
+					<a href="account_xq2.html">充值</a>
+				</div>
+			</div>
+		</div>
+		<div class="box_sj">
+			<a href="javascript:;"><img src="../../img/bann.png" /></a>
+		</div>
+		<div class="box_zi">
+			<a href="javascript:;"><img src="../../img/bannxia.png" /></a>
+		</div>
+	</body>
+
+</html>

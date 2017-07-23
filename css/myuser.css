@@ -1,0 +1,31 @@
+html,body{width: 100%;height: 100%;}
+.status{width: 100%;height: 100%;background:#F5F5F5 ;z-index: 3;}
+.header{width: 100%;}
+.header>img{width:100%;}
+.list{width: 100%;height: 4.7rem;display: flex;color: #CBCACA;
+border-bottom: 1px solid #D6D6D6;background: white;}
+.list>div{width: 50%;display: flex; flex-direction: column;justify-content: space-around;
+}
+.list>div>p{margin-left:1rem;font-size: 0.8rem;}
+.list>div>img{width: 8.2rem;margin-left:1rem;}
+.cont-spa{font-size:2rem;color: #FA5C07;}
+.column{width: 100%;height: 7rem;margin-top: 0.7rem;border-top: 1px solid #D6D6D6;
+display: flex;flex-direction: column;background:white ;}
+.column>div{width: 100%;display: flex;height: 2.5rem;align-items: center;border-bottom:1px solid #D6D6D6;}
+.column>div>div{width: 50%;display: flex;justify-content: space-between;}
+.column>div>div img{width: 1.5rem;}
+.list-p1{background: url(../img/tu_03.png) no-repeat 0px 0.2rem;background-size:1.5rem ;height: 2rem;
+line-height:2rem;padding-left:2rem ;margin-left:1rem;font-size:0.9rem ;}
+.list-p2{margin-left:2.6rem ;background: url(../img/tu_07.png) no-repeat 6rem 0.1rem;width: 100%;
+background-size:1rem ;font-size: 0.7rem;}
+.list-p3{background:url(../img/tu_04.png) no-repeat 0px 0.2rem;background-size:1.5rem ;height: 2rem;
+line-height:2rem;padding-left:2rem ;margin-left:1rem;font-size:0.9rem ;}
+.list-p4{background: url(../img/tu_05.png) no-repeat 0px 0.2rem;background-size:1.5rem ;height: 2rem;
+line-height:2rem;padding-left:2rem ;margin-left:1rem;font-size:0.9rem ;}
+.list-p2>a{color: #FB7435;}
+.list1{width: 100%;margin-top: 0.7rem;height: 2.5rem;background: white;border-top: 1px solid #D6D6D6;
+border-bottom: 1px solid #D6D6D6;}
+.list1>div{width: 100%;display: flex;height: 2.5rem;align-items: center;}
+.list1>div>div{width: 50%;display: flex;justify-content: space-between;align-items: center;}
+.list-p5{background: url(../img/tu_06.png) no-repeat 0px 0.2rem;background-size:1.5rem ;height: 2rem;
+line-height:2rem;padding-left:2rem ;margin-left:1rem;font-size:0.9rem ;}

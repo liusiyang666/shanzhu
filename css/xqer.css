@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+header{
+  width: 100%;
+}
+header>div{
+  width: 100%;
+  padding: 0.6rem 0;
+  background: #fa5b2b;
+  text-align: center;
+  color: white;
+  font-size: 0.75rem;
+  position: relative;
+}
+header>div>div{
+  position: absolute;
+  top:0.7rem;
+  left: 0.6rem;
+}
+header>div>div>a>img{
+  width:0.42rem;
+  height: 0.82rem;
+}
+section{
+  width: 100%;
+}
+.banner{
+  width:94%;
+  text-align: center;
+  background:#fa5b2b ;
+  padding: 0.5rem;
+}
+.banner>img{
+  width:4.3rem ;
+  height: 4.3rem;
+  display: block;
+  margin: 0 auto;
+}
+.banner>p{
+  font-size: 0.65rem;
+  color: white;
+  padding-top: 0.5rem;
+}
+.text{
+  width:94%;
+  padding:0.45rem 0 0.45rem 0.57rem;
+  font-size: 0.57rem;
+  color: grey;
+  border-bottom: 1px solid gainsboro;
+}
+.xiangmu{
+  width: 93%;
+  padding: 0.5rem;
+}
+.xiangmu>li{
+  display: flex;
+}
+.xiangmu>li>input{
+  display: block;
+  margin-top: 0.6rem;
+  margin-right: 0.3rem;
+}
+.xiangmu>li>div{
+  display: flex;
+  padding-left: 0.5rem;
+  font-size: 0.65rem;
+  color: grey;
+  width: 80%;
+  padding-top: 0.5rem;
+}
+.xiangmu>li>div>p:nth-child(1){
+  text-align: left;
+  width: 35%;
+}
+.xiangmu>li>div>p:nth-child(2){
+  text-align: right;
+  width: 65%;
+}
+.text2{
+  width: 88%;
+  margin: 0 auto;
+  border: 1px dotted red;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #f79277;
+}
+.text3{
+  width: 90%;
+  margin: 0 auto;
+  background: #fed557;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: white;
+  margin-top: 0.5rem;
+  border-radius: 10px 10px 10px 10px;
+}

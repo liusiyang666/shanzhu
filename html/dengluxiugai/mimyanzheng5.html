@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>闪注</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../css/css1.css"/>
+	</head>
+	<body>
+		<div class="benner">
+			<p><a href="javascript:;"><a href="mimyanzheng1.html"><img src="../../img/msg1_back.png"/></a></a></p>
+			<p>手机验证</p>
+			<p></p>
+		</div>
+		
+		<div class="duanxin">
+			<p>验证短信已发送到手机号为:</p>
+			<div>185****4567</div>
+		</div>
+		<!--<ul>
+			<li><a href="#">通过原登录密码验证<span>&gt;</span></a></li>
+			<li><a href="#">通过手机号密码验证<span>&gt;</span></a></li>
+		</ul>-->
+		<div class="foot_5">
+			<p class="p1"><img src="../../img/denglu/denglu-2.png"/></p>
+		    <input type="password" placeholder="输入手机验证码"/>
+			<p id="p">发送验证码</p>
+			<span></span>
+		</div>
+		<div class="foot_filst">
+			<a href="mimyanzheng1.html">确定</a>
+		</div>
+	</body>
+	<script src="../../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		(function(win,doc){
+		//浏览器缩放时
+		win.onresize=function(){
+			change();	
+		};
+		change();
+		function change(){
+			var oFs=doc.documentElement.clientWidth/(320/20);
+	
+			//设置根目录字体大小
+			doc.documentElement.style.fontSize=oFs+'px';	
+		}	
+	})(window,document);
+	
+	    $(function(){
+//	    	var mm=null;
+	    	
+	    	function shij(){
+	    		var a=60;
+//              clearInterval(mm);
+	            var time=document.getElementById("p");
+	            mm=setInterval(function(){
+	            	a--;
+	                time.innerHTML=a+"后重新发送"
+	                if(a<1){
+	                	time.innerHTML="发送验证码"
+	                	clearInterval(mm);
+	                	$("span").css("display","none");
+	                } 
+	            },1000);
+	            $("span").css("display","block")
+	    	}
+	    	
+	    	$("#p").click(shij)
+
+//          var pp=document.getElementById("p");
+//          pp.onclick=function(){
+//          	shij();
+//          }
+            
+            
+	    })
+	
+	</script>
+</html>

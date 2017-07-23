@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/xqer.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+    <title></title>
+</head>
+<script>
+    (function (win, doc) {
+        //浏览器缩放时
+        win.onresize = function () {
+            change();
+        };
+        change();
+
+        function change() {
+            var oFs = doc.documentElement.clientWidth / (320 / 20);
+
+            //设置根目录字体大小
+            doc.documentElement.style.fontSize = oFs + 'px';
+        }
+    })(window, document);
+</script>
+<body>
+<header>
+    <div>
+        充值
+        <div><a href="account_xq1.html"><img src="../../img/msg3_back.png" alt=""></a></div>
+    </div>
+</header>
+<section>
+    <div class="banner">
+        <img src="../../img/zfb.png" alt="">
+        <p>闪注目前只支持支付宝充值</p>
+    </div>
+    <div class="text">
+        请选择以下充值项目进行充值
+    </div>
+    <ul class="xiangmu">
+        <li>
+            <input type="checkbox"/>
+            <a href="javascript:;"><img src="../../img/shan.png"/></a>
+            <div>
+                <p>闪注量充值</p>
+                <p>五万条 <span><img src="../../img/xia_03.png" alt=""></span></p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox"/>
+            <a href="javascript:;"><img src="../../img/duan.png"/></a>
+            <div>
+                <p>短信量充值</p>
+                <p>1000条 <span><img src="../../img/xia_03.png" alt=""></span></p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox"/>
+            <a href="javascript:;"><img src="../../img/A.png"/></a>
+            <div>
+                <p>优惠套餐包A</p>
+                <p>200万次闪注量</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox"/>
+            <a href="javascript:;"><img src="../../img/B.png"/></a>
+            <div>
+                <p>优惠套餐包B</p>
+                <p>10万短信量+10万闪注量</p>
+            </div>
+        </li>
+    </ul>
+    <div class="text2">
+        你当前选择的产品项目价格为：500RMB
+    </div>
+    <div class="text3">充值</div>
+</section>
+</body>
+</html>

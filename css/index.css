@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 0.32rem;
+}
+
+header {
+	text-align: right;
+	color: white;
+	background:#f69705;
+	padding: 8px 0;
+	width: 100%;
+}
+header div{
+	padding-right: 0.12rem;
+	
+}
+.banner{
+	width: 100%;
+	
+}
+.banner img{
+	width: 100%;
+}
+.content{
+	width: 100%;
+	padding-top: 1.12rem;
+}
+.content>div{
+	width: 85%;
+	border-bottom: 1px solid gainsboro;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.content input{
+	border: 0;
+	font-size: 0.18rem;
+	padding-left: 10px;
+	width: 85%;
+}
+.content span{
+	margin-top: 20px;
+}
+.content>div{
+	display: flex;
+}
+.content img{
+	height: 100%;
+	width: 100%;
+}
+.content>div>div:first-child{
+	width: 5%;
+}
+.btn{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 40px;
+
+}
+.btn input{
+	width: 100%;
+	border: 0;
+	border-radius: 20px;
+	padding: 10px 0;
+	background: #f8d475;
+	color: white;
+}
+.content>div:last-child{
+	border: 0;
+	margin-top: 30px;
+}
+footer{
+	position: fixed;
+	bottom: 10px;
+	left: 45%;
+
+
+}
+footer a{
+	color: #F8D475;
+	text-decoration: none;
+	font-size: 0.16rem;
+	
+}
+.modal-content{
+	border-radius: 16px;
+}
+.modal-footer{
+	padding: 0;
+	border-radius: 0 0 10px 10px;
+}
+.btns{
+	display: flex;
+}
+.btns>div{
+	width: 50%;
+}
+.btns button{
+	width: 100%;
+	background: #ffd974;
+	color: white;
+	border: 0;
+	padding: 10px;
+}
+
+.btns .btn1s{
+	border-radius: 0 0 16px 0;
+}
+.btns .btn2s{
+	border-radius: 0 0 0 16px;
+}
